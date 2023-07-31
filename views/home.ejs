@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Box</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+    }
+    #title{
+        border: 0.1rem black solid;
+        background-color: aliceblue;
+        text-align: center;
+        padding: 1rem;
+        font-size: larger;
+    }
+
+    #hero{
+        border: 0.1rem black solid;
+        text-align: center;
+        padding: 3rem;
+        height:70vh;
+    }
+
+    #auth{
+        float:right;
+    }
+
+    button{
+        border: 0.1rem red solid;
+        background-color: rgb(237, 214, 214);
+        text-align: center;
+        padding: 0.5rem;
+        font-size: large;
+    }
+</style>
+<body>
+    <div id="title"> 
+        <p id="auth">
+            <a href="/register-page" > <button>Register</button> </a>
+
+            <a href="/login-page" > <button>Login</button> </a>
+        </p>
+        <a href="/"> Story Box </a>
+    </div>
+    <div id="hero">
+        <p>Welcome <%=locals.email %> </p>
+        Publish your stories to the world 
+    </div>
+
+</body>
+</html>

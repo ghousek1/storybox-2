@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story Box</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    #title {
+      border: 0.1rem black solid;
+      background-color: aliceblue;
+      text-align: center;
+      padding: 1rem;
+      font-size: larger;
+    }
+
+    #hero {
+      border: 0.1rem black solid;
+      padding: 3rem;
+      height: 70vh;
+    }
+
+    input {
+      display: block;
+    }
+    label{
+        color:rgb(242, 107, 83)
+    }
+  </style>
+  <body>
+    <div id="title"><a href="/"> Story Box </a></div>
+    <div id="hero">
+      Registering the user
+      <form action="/register" method="post">
+        <label for="email"> Email: </label>
+        <input type="email" name="email" />
+        <label for="password"> Password: </label>
+        <input type="password" name="password" />
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </body>
+</html>
